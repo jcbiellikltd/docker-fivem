@@ -17,6 +17,9 @@ See [example directory](https://github.com/jcbiellikltd/docker-fivem/tree/master
 fivem:
   image: joebiellik/fivem
 
+  stdin_open: true
+  tty: true
+
   volumes:
     # You must provide a server config file
     - ./server.cfg:/srv/server.cfg
